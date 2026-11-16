@@ -1,0 +1,54 @@
+.strona {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.jasny { background: #f3f4f6; color: #111827; }
+.ciemny { background: #111827; color: #f3f4f6; }
+
+.kontener { max-width: 900px; margin: 0 auto; }
+.naglowek, .gora, .szukaj, .karta, .brak, .cytat {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.ciemny .naglowek,
+.ciemny .gora,
+.ciemny .szukaj,
+.ciemny .karta,
+.ciemny .brak,
+.ciemny .cytat {
+  background: #1f2937;
+  color: #f3f4f6;
+}
+
+.gora { display: flex; justify-content: space-between; align-items: center; }
+.akcje { display: flex; gap: 10px; }
+.button {
+  border: none; border-radius: 8px; padding: 8px 12px; cursor: pointer;
+  background: #2563eb; color: white;
+}
+.button.sekundarny { background: #6b7280; }
+
+.szukaj input {
+  width: 100%; padding: 8px; margin-top: 6px; border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.lista { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.karta { background: #fff; }
+.ciemny .karta { background: #1f2937; }
+.tag {
+  display: inline-block; background: #dbeafe; color: #1d4ed8; border-radius: 999px; padding: 4px 8px; font-size: 11px;
+}
+
+.cytat { background: #ecfeff; border-left: 5px solid #06b6d4; }
+.ciemny .cytat { background: #0f172a; border-left-color: #22d3ee; }
+
+@media (max-width: 640px) {
+  .gora { display: block; }
+  .akcje { margin-top: 10px; }
+}
+
